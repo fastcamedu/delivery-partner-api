@@ -1,0 +1,8 @@
+### Google GeoCode by Location
+GET http://localhost:30001/apis/geocode/location?lat=37.6427407&lng=127.2402357
+
+### Google GeoCode by Address
+GET http://localhost:30001/apis/geocode/address?address=경기도 남양주시 평내동 148
+
+### Google GeoCode Longname by Location
+GET http://localhost:30001/apis/geocode/location/long-name?lat=37.6427407&lng=127.2402357

@@ -1,0 +1,9 @@
+### 배달 진행 상태 변경
+PUT http://localhost:30001/apis/deliveries/status
+Content-Type: application/json
+
+{
+  "deliveryRequestId": 1,
+  "deliveryPartnerId": 3,
+  "deliveryStatus": "ARRIVAL_AT_STORE"
+}

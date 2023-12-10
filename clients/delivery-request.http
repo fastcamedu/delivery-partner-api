@@ -1,0 +1,16 @@
+### 배달 요청 목록
+GET http://localhost:30001/apis/delivery-requests?deliveryPartnerId=4
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXNpYUBzdXNpYS5jb20iLCJpYXQiOjE3MDIyMDk1NTcsImV4cCI6MTcwMjIxMzE1N30.tpY4MSXlSzvRFdoRPncGUiwGBpofh5ibaCY1SL7GBgc
+
+### 배달 요청 상세
+GET http://localhost:30001/apis/delivery-requests/1
+
+### 배달 요청 수락
+PUT http://localhost:30001/apis/delivery-requests/status
+Content-Type: application/json
+
+{
+  "orderDeliveryId": 1,
+  "deliveryPartnerId": 1,
+  "deliveryRequestStatus": "ACCEPT"
+}

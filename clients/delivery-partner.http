@@ -1,0 +1,27 @@
+### 배달 파트너 가입
+POST http://localhost:30001/apis/signup
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "1111",
+  "bankCode": "KB",
+  "bankAccountName": "번쩍 배달원",
+  "bankAccount": "1111-22-3333",
+  "socialNumber": "901202-1232222",
+  "deliveryZone": "평내동",
+  "transportation": "CAR"
+}
+
+### 배달 파트너 로그인
+POST http://localhost:30001/apis/auth
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "1111"
+}
+
+
+### 배달 파트너 조회
+GET http://localhost:30001/apis/delivery-partners/1
